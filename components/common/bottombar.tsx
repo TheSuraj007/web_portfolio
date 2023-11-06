@@ -52,7 +52,7 @@ export default function BottomBar() {
         rel="noreferrer"
         className="flex h-full cursor-pointer items-center gap-2 border-x-[1px] border-x-gray-200 px-4"
       >
-        <span className="cursor-pointer">@Surajkumar</span>
+        <span className="cursor-pointer">@Surajkumar Sharma</span>
         <Image
           src={Github}
           height="30"
