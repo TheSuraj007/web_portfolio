@@ -10,7 +10,7 @@ export default function BottomBar() {
     <footer className="fixed inset-x-[5vw] bottom-[5vh] hidden h-[55px] items-center justify-between rounded-b-[5px] border-[1px] border-t-[1px] border-gray-200 bg-dark-300 px-8 pl-2 text-gray-100 md:flex  md:pl-8">
       <div className="flex h-full items-center">
         <span className="pr-2">Connect with me</span>
-        <a
+        {/* <a
           href="https://twitter.com/lekipising"
           target="_blank"
           rel="noreferrer"
@@ -26,9 +26,9 @@ export default function BottomBar() {
               maxWidth: "100%",
               height: "auto"
             }} />
-        </a>
+        </a> */}
         <a
-          href="https://www.linkedin.com/in/liplan0lekipising/"
+          href="https://www.linkedin.com/in/surajkumar-sharma-42b6b31b4/"
           target="_blank"
           rel="noreferrer"
           className="flex h-full items-center justify-center border-x-[1px] border-x-gray-200 px-4"

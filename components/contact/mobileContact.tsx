@@ -46,7 +46,7 @@ export default function MobileSocials() {
           transition={{ ease: "easeIn", duration: 0.2 }}
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/liplan0lekipising/"
+          href="https://www.linkedin.com/in/surajkumar-sharma-42b6b31b4/"
           className="flex h-full items-center justify-center px-4"
         >
           <Image

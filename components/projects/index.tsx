@@ -21,7 +21,7 @@ import useIntersect from "../../utils/useIntersectionObserver";
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
-export default function Projects({setIsVisible} : {setIsVisible: () => void}) {
+export default function Projects({ setIsVisible }: { setIsVisible: () => void }) {
 
   // Call the useIntersect hook and receive the setNode and entry variables
   const { entry, setNode } = useIntersect({
@@ -64,7 +64,7 @@ export default function Projects({setIsVisible} : {setIsVisible: () => void}) {
         <OneProject key={i} index={i} project={project} />
       ))}
 
-      <div className="absolute bottom-0 flex w-full flex-col items-center justify-center gap-6">
+      {/* <div className="absolute bottom-0 flex w-full flex-col items-center justify-center gap-6">
         <div className="flex w-full flex-col items-center justify-center gap-3 text-center font-medium">
           <p>Download my resume to view my professional experience and more</p>
           <a
@@ -77,7 +77,7 @@ export default function Projects({setIsVisible} : {setIsVisible: () => void}) {
             <span>Download</span>
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -43,20 +43,20 @@ export default function FirstScreen({ setIsVisible }: { setIsVisible: () => void
           </p>
         </div>
         <div className="flex flex-col gap-2 italic text-gray-100 md:gap-1">
-          <p>Are you ready to see some web wizardry?</p>
-          <p>Scroll down and let me take you on a tour of my craft!</p>
+          <p>Tiny yet mighty, embedded systems weave the threads of technology,</p>
+          <p>stitching together the fabric of our interconnected world.</p>
         </div>
       </div>
       <div className="pic-shadow relative z-50 hidden h-[25vw] w-[25vw] overflow-hidden rounded-full outline outline-green md:block">
         <Image
           src={
-            "/logo.jpg"
+            "/my_picture.jpg"
           }
           height="300"
           width="300"
           quality={100}
           priority={true}
-          alt="Liplan Lekipising - Portfolio"
+          alt="Surajkumar - Portfolio"
           className="hover:scale-[1.025] object-left bg-left rounded-full transition-all duration-300 ease-in"
           sizes="100vw"
           style={{
