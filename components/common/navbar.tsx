@@ -24,7 +24,7 @@ export default function NavBar({ activeSection }: { activeSection: string }) {
       <div className="hidden h-full items-center gap-2 md:flex">
         <OneNavItem text="_hello" delay={1} isActive={activeSection === "_hello"} />
         <OneNavItem text="_about-me" delay={2} isActive={activeSection === "_about-me"} />
-        <OneNavItem text="_projects" delay={3} isActive={activeSection === "_projects"} />
+        {/* <OneNavItem text="_projects" delay={3} isActive={activeSection === "_projects"} /> */}
         <OneNavItem text="_contact-me" delay={4} isActive={activeSection === "_contact-me"} />
       </div>
 

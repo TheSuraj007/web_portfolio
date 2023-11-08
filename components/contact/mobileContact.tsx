@@ -12,7 +12,7 @@ export default function MobileSocials() {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/lekipising"
+        href="https://github.com/thesuraj007"
         className="flex items-center text-center text-[15px] underline"
       >
         Check out more of my projects on GitHub

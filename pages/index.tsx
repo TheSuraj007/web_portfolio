@@ -6,7 +6,7 @@ import NavBar from "../components/common/navbar";
 
 const AboutMe = dynamic(() => import("../components/about"));
 const ContactMe = dynamic(() => import("../components/contact"));
-const Projects = dynamic(() => import("../components/projects"));
+// const Projects = dynamic(() => import("../components/projects"));
 const BottomBar = dynamic(() => import("../components/common/bottombar"));
 
 import { useScroll, useTransform } from "framer-motion";
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <FirstScreen setIsVisible={() => setActiveSection("_hello")} />
         <AboutMe setIsVisible={() => setActiveSection("_about-me")} />
-        <Projects setIsVisible={() => setActiveSection("_projects")} />
+        {/* <Projects setIsVisible={() => setActiveSection("_projects")} /> */}
         <ContactMe setIsVisible={() => setActiveSection("_contact-me")} />
         <BottomBar />
         <div
