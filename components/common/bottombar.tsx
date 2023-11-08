@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import Twitter from "../../assets/twitter.svg";
+// import Twitter from "../../assets/twitter.svg";
 import LinkedIn from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
 
