@@ -5,6 +5,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email, message, name } = req.body;
+
   // validate the data coming in
   if (!email || !message || !name) {
     return res.status(400).send("Missing one or more fields");
@@ -13,7 +14,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const msg = {
     to: process.env.EMAIL_TO,
     from: {
-      email: process.env.EMAIL_FROM,
+      email: email, 
       name: `${name} via Portfolio`,
     },
     replyTo: email,
