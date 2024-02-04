@@ -13,10 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const msg = {
     to: process.env.EMAIL_TO,
-    from: {
-      email: email, 
-      name: `${name} via Portfolio`,
-    },
+    from: email,
     replyTo: email,
     subject: `Message from ${name}`,
     name,
@@ -27,6 +24,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     await sgMail.send(msg);
     res.json({ message: `Email has been sent` });
   } catch (error) {
+    console.error("Error sending email:", error);
     res.status(500).json({ error: "Error sending email" });
   }
 };
